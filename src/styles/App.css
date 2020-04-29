@@ -1,0 +1,408 @@
+/*----------COLORS*/
+/*-----------SIZES*/
+/*-----------FONTS*/
+.header {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  background-color: #FF6600 !important;
+}
+
+.header .navbar-link {
+  color: white !important;
+  font-size: 1.1em;
+  font-family: "Lato", sans-serif;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.header .navbar-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin: 0 10px;
+}
+
+.container-particles {
+  position: relative;
+  height: 100vh;
+  background-color: #343A41;
+}
+
+.container-particles .particles {
+  width: 100%;
+  height: inherit;
+}
+
+.container-particles .home-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-particles .home-info h1 {
+  text-align: center;
+  font-size: 4.4em;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-particles .home-info h1 {
+    font-size: 3.08em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-particles .home-info h1 {
+    font-size: 2.64em;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-particles .home-info h1 {
+    font-size: 2.2em;
+    margin-top: -20px;
+  }
+}
+
+.container-particles .home-info span {
+  color: #FF6600;
+}
+
+.container-particles .home-info .button-container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-particles .home-info .button-container .home-button {
+  padding: .8em 1.8em;
+  border-radius: 10px;
+  background: #FF6600;
+  border: 1px solid #FF6600;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  outline: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.container-particles .home-info .button-container .home-button:hover {
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .container-particles .home-info .button-container .home-button {
+    padding: .6em 1.5em;
+    font-size: 1em;
+  }
+}
+
+.progressbar {
+  margin: 10px 0 30px 0;
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #FF6600;
+}
+
+.user-container {
+  padding: 5em 0;
+  font-family: "Lato", sans-serif;
+}
+
+.user-container .user-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-container .user {
+  padding-top: 10px;
+}
+
+.user-container .user-info {
+  width: 80%;
+  margin: 1.5em auto;
+  margin-top: 20px;
+}
+
+.user-container .user-info h1 {
+  margin-bottom: 20px;
+}
+
+.user-container .user-info p {
+  font-size: 1.05em;
+  text-align: center;
+}
+
+.user-container .user .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3em;
+}
+
+.user-container .user .social-list .social-item {
+  margin: 0 8px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.user-container .user .social-list .social-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.user-container .user img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-container .skills h1 {
+  text-align: left;
+  color: #FF6600;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .user-container .skills h1 {
+    text-align: center;
+  }
+}
+
+.user-container .skills .user-skills {
+  margin: 3em 0;
+}
+
+.card-hover {
+  width: 360px;
+  height: 180px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-hover {
+    width: 360px;
+    height: 180px;
+  }
+}
+
+.card-hover .card-container {
+  width: inherit;
+  height: inherit;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.card-hover .card-container .card-front {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card-hover .card-container .card-front img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .card-hover .card-container .card-front img {
+    width: 360px;
+    height: 180px;
+  }
+}
+
+.card-hover .card-container .card-back {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 2px solid #FF6600;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-hover .card-container .card-back h2 {
+  font-size: 2.5em;
+}
+
+.card-hover .card-container .card-back .labels-container {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.card-hover .card-container .card-back .labels-container .label {
+  margin: 5px;
+  padding: 8px;
+  background-color: #343A40 !important;
+  color: white;
+}
+
+.card-hover .card-container .card-back .button {
+  margin: 1em 0;
+  padding: 5px 10px;
+  color: white;
+  background-color: #FF6600 !important;
+  border: 1px solid #FF6600;
+}
+
+.card-hover .card-container .card-back .button:hover {
+  background: transparent !important;
+  border: 1px solid #FF6600;
+  color: black;
+}
+
+.card-hover:hover .card-container {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.portafolio-container {
+  padding-bottom: 10em;
+}
+
+.portafolio-container .title-container {
+  padding: 0 0 3em 0;
+}
+
+.portafolio-container .title-container .portafolio-title h1 {
+  font-size: 4em;
+  color: #FF6600;
+}
+
+@media screen and (max-width: 768px) {
+  .portafolio-container .title-container .portafolio-title h1 {
+    font-size: 3.5em;
+  }
+}
+
+.portafolio-container .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  background: #343A40;
+  color: white;
+  padding-top: 3em;
+  font-weight: 600;
+}
+
+.footer-title {
+  padding: 1em;
+}
+
+.footer-title h1 {
+  font-size: 3.6em;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-title h1 {
+    font-size: 2.6em;
+  }
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.footer-info .item {
+  margin: 0 10px;
+}
+
+.footer-info .item .text-orange {
+  color: #FF6600;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0;
+  }
+}
+
+.footer .copy {
+  margin: 20px 0;
+  font-weight: normal;
+}
+/*# sourceMappingURL=App.css.map */

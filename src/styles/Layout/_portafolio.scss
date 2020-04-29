@@ -1,0 +1,28 @@
+.portafolio-container
+{
+    padding-bottom: 10em;
+    .title-container
+    {
+        padding: 0 0 3em 0;
+        .portafolio-title
+        {
+            & h1
+            {
+                font-size:4em;
+                color: $orange;
+    
+                @include responsive(768px)
+                {
+                    font-size: 3.5em;
+                }
+            }
+        }
+    }
+    .cards-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,79 @@
+.container-particles
+{
+    position: relative;
+    height:100vh;
+    background-color: $home-color;
+    .particles
+    {
+        width: 100%;
+        height: inherit;
+    }
+    .home-info
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & h1
+        {
+            text-align: center;
+            font-size: $fontsize-home;
+
+            @include responsive(1024px)
+            {
+                font-size: $fontsize-home*0.7;
+            }
+            @include responsive(768px)
+            {
+                font-size: $fontsize-home*0.6;
+                margin-top: -20px;
+            }
+            @include responsive(480px)
+            {
+                font-size: $fontsize-home*0.5;
+                margin-top: -20px;
+            }
+        }
+        & span
+        {
+            color: $orange;
+        }
+
+        .button-container
+        {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            .home-button
+            {   
+                padding:.8em 1.8em;
+                border-radius: 10px;
+                background: $orange;
+                border: 1px solid $orange;
+                color: white;
+                font-size: 1.2em;
+                font-weight: 600;
+                outline: 0;
+                transition: all 500ms;
+                &:hover
+                {
+                    background: transparent;
+                    box-sizing: border-box;
+                }
+
+                @include responsive(768px)
+                {
+                    padding: .6em 1.5em;
+                    font-size:1em;
+                }
+            }
+        }
+    }
+}

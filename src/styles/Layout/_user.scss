@@ -1,0 +1,75 @@
+.user-container
+{
+    padding:5em 0;
+    font-family:$font;
+
+    .user-center
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user
+    {
+        padding-top:10px;
+        &-info
+        {
+            width: 80%;
+            margin: 1.5em auto;
+            margin-top:20px;
+
+            & h1
+            {
+                margin-bottom: 20px;
+            }
+            & p
+            {
+                font-size: $fontsize-user*0.7;
+                text-align:center;
+            }
+        }
+        .social-list
+        {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3em;
+            .social-item
+            {
+                margin: 0 8px;
+                transition: all 500ms;
+                &:hover
+                {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        & img
+        {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+
+    .skills
+    {
+        & h1
+        {
+            text-align: left;
+            color: $orange;
+            font-weight: 700;
+
+            @include responsive(768px)
+            {
+                text-align: center;
+            }
+        }
+        .user-skills
+        {
+            margin: 3em 0;
+        }
+    }
+}

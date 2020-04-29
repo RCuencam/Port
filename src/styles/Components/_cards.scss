@@ -1,0 +1,88 @@
+.card-hover
+{
+    width:360px;
+    height: 180px;
+    margin:10px;
+    @include responsive(768px)
+    {
+        width: 360px;
+        height: 180px;
+    }
+    .card-container
+    {
+        width: inherit;
+        height: inherit;
+        font-family: $font;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all 500ms;
+        .card-front
+        {
+            backface-visibility: hidden;
+            & img
+            {
+                width: 100%;
+                height: 100%;
+                @include responsive(768px)
+                {
+                    width: 360px;
+                    height: 180px;
+                }
+            }
+        }
+    
+        .card-back
+        {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom:0;
+            top:0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+            border: 2px solid $orange;
+            transform: rotateY(180deg);
+            & h2
+            {
+                font-size:$fontsize-cards;  
+            }
+    
+            .labels-container
+            {
+                width: 300px;
+                height: auto;
+                margin: 0 auto;
+                .label
+                {
+                    margin: 5px;
+                    padding: 8px;
+                    background-color: $dark !important;
+                    color: white;
+                }
+            }
+    
+            .button
+            {
+                margin: 1em 0;
+                padding:5px 10px;
+                color:white;
+                background-color: $orange !important;
+                border:1px solid $orange;
+                &:hover
+                {
+                    background:transparent !important;
+                    border:1px solid $orange;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &:hover .card-container
+    {
+        transform: rotateY(180deg);
+    }
+}

@@ -1,0 +1,22 @@
+
+.header
+{
+    transition: all 500ms;
+    background-color: $orange !important;
+    .navbar
+    {
+        &-link
+        {
+            color: white !important;
+            font-size: $fontsize-header;
+            font-family: $font;
+            transition: all 500ms;
+            &:hover
+            {
+                transform: scale(1.1);
+                margin: 0 10px;
+            }
+        }
+
+    }
+}

@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+body
+{
+  position: relative;
+}
+.top-button
+{
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+}
+.top-button a
+{
+  line-height:40px;
+  line-width:40px;
+}

@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
+import User from "./Pages/User";
+import Portafolio from "./Pages/Portafolio";
+import Footer from "./Pages/Footer";
+import {FaArrowCircleUp } from "react-icons/fa";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Home/>
+      <User/>
+      <Portafolio/>
+      <Footer email="rcuencadev@gmail.com" direction="Calle Los Escritores 132, Lima Perú" phone="967707915"/>
+      <div className="top-button">
+        <a href="#home"><FaArrowCircleUp color="#FF6600" size="50px"/></a>
+      </div>
     </div>
   );
 }

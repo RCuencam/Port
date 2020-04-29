@@ -1,0 +1,50 @@
+.footer
+{
+    background: $dark;
+    color: white;
+    padding-top: 3em;
+    font-weight: 600;
+
+    &-title
+    {
+        padding: 1em;
+        
+        h1
+        {
+            font-size: $fontsize-footer*1.8;
+            @include responsive(768px)
+            {
+                font-size: $fontsize-footer*1.3;
+            }
+        }
+        
+    }
+    &-info
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:20px;
+        font-size: 1.2em;
+        .item
+        {
+            margin: 0 10px;
+
+            .text-orange
+            {
+                color:$orange;
+            }
+        }
+
+        @include responsive(768px)
+        {
+            flex-direction: column;
+            margin: 10px 0;
+        }
+    }
+    .copy
+    {
+        margin: 20px 0;
+        font-weight:normal;
+    }
+}
