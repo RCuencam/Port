@@ -23,16 +23,16 @@ const Example = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto navbar" navbar>
             <NavItem>
-              <NavLink  href="/#home" className="navbar-link">Home</NavLink>
+              <NavLink  href="#home" className="navbar-link">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/#user" className="navbar-link">About</NavLink>
+              <NavLink href="#user" className="navbar-link">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/#portafolio" className="navbar-link">Portafolio</NavLink>
+              <NavLink href="#portafolio" className="navbar-link">Portafolio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/#contact" className="navbar-link">Contact</NavLink>
+              <NavLink href="#contact" className="navbar-link">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
